@@ -9,14 +9,23 @@ program menu_selection
     print  *,'3    Yellow'
     read  *,choice
     if  (choice == 1) then  
-  		print *,'result = BLUE'
+  		print *,'result = '//achar(27)//'[94m BLUE '//achar(27)//'[0m'
     	end if
     	if (choice == 2) then
-  		print *,'result = RED'
+  		print *,'result ='//achar(27)//'[31m RED '//achar(27)//'[0m'
   	end if
   	if (choice == 3) then
-  		print *,'result = YELLOW' 
+  		print *,'result = '//achar(27)//'[33m YELLOW '//achar(27)//'[0m'
   	end if
-      
+    print *, 'A great color is '//achar(27)//'[95m pink '//achar(27)//'[0m.'
 end program menu_selection
-      
+
+! color codes reference
+![90m=dark grey           [30m=black
+![91m=peach               [31m=red
+![92m=light green         [32m=green
+![93m=light yellow        [33m=yellow
+![94m=light blue          [34m=blue
+![95m=pink                [35m=purple
+![96m=light aqua          [36m=aqua
+![97m=pearl white
