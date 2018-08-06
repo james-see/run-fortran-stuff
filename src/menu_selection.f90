@@ -4,20 +4,20 @@ program menu_selection
     integer :: choice
     !set up the menu – the user may enter  1, 2 or 3
     print  *,'Choose an option for favorite color'
-    print  *,'1    Blue'
-    print  *,'2    Red'
-    print  *,'3    Yellow'
+    print  *,'1)  '//achar(27)//'[94m Blue '//achar(27)//'[0m'
+    print  *,'2)  '//achar(27)//'[31m Red '//achar(27)//'[0m'
+    print  *,'3)  '//achar(27)//'[33m Yellow '//achar(27)//'[0m'
     read  *,choice
     if  (choice == 1) then  
-  		print *,'result = '//achar(27)//'[94m BLUE '//achar(27)//'[0m'
+  		print *,'result ='//achar(27)//'[94m BLUE '//achar(27)//'[0m'
     	end if
     	if (choice == 2) then
   		print *,'result ='//achar(27)//'[31m RED '//achar(27)//'[0m'
   	end if
   	if (choice == 3) then
-  		print *,'result = '//achar(27)//'[33m YELLOW '//achar(27)//'[0m'
+  		print *,'result ='//achar(27)//'[33m YELLOW '//achar(27)//'[0m'
   	end if
-    print *, 'A great color is '//achar(27)//'[95m pink '//achar(27)//'[0m.'
+
 end program menu_selection
 
 ! color codes reference
